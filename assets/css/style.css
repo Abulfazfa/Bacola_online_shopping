@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+img{
+    width: 100%;
+}
+/* Topest part */
+.blue-area p{
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    padding: 8px 0;
+    margin: 0;
+}
+#top-header-menu>*{
+    font-size: 12px;
+}
+#top-left-menu li a{
+    font-family: 'Inter', sans-serif;
+    color: #3e445A;
+    margin-right: 15px;
+}
+#top-left-menu li{
+    padding: 10px 0;
+}
+.right-side>div{
+    padding: 10px 15px;
+    font-size: 12.5px;
+}
+.right-side>div:nth-child(2){
+    border-left: 1px solid #e3e4e6;
+    border-right: 1px solid #e3e4e6;
+}
+.s_lang li select{
+    border: 0;
+}
+/* Topest part end*/
+
+
+.site-brand{
+    width: 165px;
+    padding: 0;
+}
+.site-brand span{
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
+    color: #3e445A;
+    display: inline-block;
+    width: 102%;
+
+}
+.all-category{
+    background-color:#2bbef9;
+    padding: 12px 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+
+.slider1{
+    background-image: url(https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-6.jpg);
+}
+.slider2{
+    background-image: url(https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-7.jpg);
+}
