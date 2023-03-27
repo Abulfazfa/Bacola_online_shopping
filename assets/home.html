@@ -41,18 +41,18 @@
                             <div class="lang">
                                 <ul class="s_lang">
                                     <li class="me-3">
-                                        <select name="" id="">
-                                        <option value="" selected>English</option>
+                                        <a href="">English</a>
+                                        <!-- <option value="" selected>English</option>
                                         <option value="">Spanish</option>
-                                        <option value="">German</option>
-                                        </select>
+                                        <option value="">German</option> -->
+                                        
                                     </li>
                                     <li>
-                                        <select name="" id="">
-                                        <option value="" selected>USD</option>
+                                        <a href="">USD</a>
+                                        <!-- <option value="" selected>USD</option>
                                         <option value="">INR</option>
-                                        <option value="">GBP</option>
-                                        </select>
+                                        <option value="">GBP</option> -->
+                                        
                                     </li>
                                 </ul>
                             </div>
@@ -62,47 +62,98 @@
                 </div>
             </div>
         </div>
-        <div class="header-search mt-5">
+        <div class="header-search mt-4">
             <div class="container">
-                <div class="row">
-                    <div class="site-brand">
-                        <a href="#" title="Bacola – Grocery Market and Food Theme">
-                            <img class="desktop-logo hide-mobile"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/bacola-logo.png"
-                                alt="Bacola – Grocery Market and Food Theme">
-                            <span class="brand-description">Online Grocery Shopping Center</span>
-                        </a>
+                <div class="row align-items-center">
+                    <div class="col-md-2">
+                        <div class="site-brand">
+                            <a href="#" title="Bacola – Grocery Market and Food Theme">
+                                <img class="desktop-logo hide-mobile"
+                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/bacola-logo.png"
+                                    alt="Bacola – Grocery Market and Food Theme">
+                                <span class="brand-description">Online Grocery Shopping Center</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="search-part">
-
+                    <div class="col-md-10 d-flex">
+                        <div class="search-part d-flex">
+                            <div class="location d-flex ms-4">
+                                <div class="left-part">
+                                    <span class="location-description d-block">Your Location</span>
+                                    <span class="current-location">Select a Location</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="search-input">
+                                <input type="text" placeholder="Search for products...">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="basket-profile d-flex align-items-center">
+                            <div class="profile-circle p-2" style="border: 1px solid #e3e4e6; border-radius: 50%;">
+                                <i class="fa-solid fa-user" style="font-size: 22px;"></i>
+                            </div>
+                            <div class="basket ms-3">
+                                <span id="total-price">0.00$</span>
+                                <i class="fa-solid fa-basket-shopping ms-3" style="font-size: 22px;"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="navbar">
+        <div class="navbar_part">
             <div class="container">
                 <div class="row">
-                    <div class="all-category">
-                        <a href="#" class="ms-2">
-                            <i class="fa-solid fa-bars text-light"></i>
-                            <span class="text text-light me-3 ms-2">ALL CATEGORIES</span>
-                            <i class="fa-solid fa-chevron-down text-light"></i>
-                        </a>
+                    
+                    <div class="col-md-4 p-0 pt-4">
+                        <div class="all-category">
+                            <a href="#" class="ms-2">
+                                <i class="fa-solid fa-bars text-light"></i>
+                                <span class="text text-light me-3 ms-2">ALL CATEGORIES</span>
+                                <i class="fa-solid fa-chevron-down text-light"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="nav">
-                        
+                    
+                    <div class="col-md-8 p-0 pt-4" style="display: flex; align-items: center;">
+                        <ul class="w-100 d-flex justify-content-between nav-ul">
+                            <li><a href=""><span class="me-3">HOME</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                            <li><a href=""><span class="me-3">SHOP</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                            <li><a href=""><span>MEATS & SEAFOOD</span></a></li>
+                            <li><a href=""><span>BAKERY</span></a></li>
+                            <li><a href=""><span>BEVERAGES</span></a></li>
+                            <li><a href=""><span>BLOG</span></a></li>
+                            <li><a href=""><span>CONTACT</span></a></li>
+                        </ul>
+                    
                     </div>
+                    
                 </div>
             </div>
         </div>
     </section>
     <section id="slider">
-        <div class="owl-carousel owl-theme">
-            <div class="item"><a href=""><div class="slider-item slider1"></div></a></div>
-            <div class="item"><a href=""><div class="slider-item slider2"></div></a></div>
-        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-7.jpg" class="d-block w-100" alt="...">
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon nav-btn" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon nav-btn" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
 </body>
 <script src="./owl/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/script.js"></script>
 </html>
