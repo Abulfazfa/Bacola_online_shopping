@@ -78,6 +78,18 @@ img{
     height: 50px;
     display: flex;
     align-items: center;
+    position: relative;
+}
+.all-category::after{
+    content: "TOTAL 63 PRODUCTS";
+    font-size: 9px;
+    background-color: #e3e4e6;
+    border-radius: 20px;
+    border: 0;
+    position: absolute;
+    bottom: -7px;
+    left: 50px;
+    padding: 1px 7px;
 }
 
 
@@ -150,3 +162,66 @@ img{
     border-radius: 50%;
     color: #3e445A;
 }
+
+
+.right-product-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card{
+    width: 233px;
+    height: 145px;
+}
+.product-card img{
+    width: 70px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#sbscrb-input{
+    padding: 17px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+}
+#sbscrb-btn{
+    padding: 14px 20px;
+    background-color: #233a95;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+
+
+.advantages .container .row .col-md-3{
+   margin: 30px 0;
+   border-right: 1px solid grey;
+   padding: 0 15px;
+}
+.advantages .container .row .col-md-3:last-child{
+    border-right: 0;
+ }
