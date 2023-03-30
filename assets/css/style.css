@@ -248,6 +248,45 @@ img{
 
 
 
+.countdown .count-item{
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+.countdown .count-item + span{
+    text-align: center;
+    margin: 3% 4px;
+}
+
+.img-container {
+    margin: 20px 0;
+    position: relative;
+}
+.img-container .deal-discount{
+    background-color: red;
+    text-align: center;
+    padding-top: 16px;
+    border-radius: 50%;
+    border: 0;
+    width: 70px;
+    height: 70px;
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    left: 15px;
+}
+
+.product-progress span{
+    width: 80%; 
+    background: linear-gradient(90deg,#d51243 0%,#ff6048 50%,#ffcd00 100%);
+}
+
 
 
 

@@ -15,6 +15,15 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <style>
+       .emptyPage a{
+        padding: 15px 30px;
+        background-color: #233a95;
+        color: white;
+        border: 0;
+        border-radius: 30px;
+       } 
+    </style>
     <section id="header">
         <div class="blue-area" style="background-color: #233a95;">
             <p class="text-center text-light">Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight
@@ -105,7 +114,7 @@
                             <div class="basket ms-3">
                                 <a href="basket.html" style="color: black;">
                                     <span id="total-price">0.00$</span>
-                                    <i class="fa-solid fa-basket-shopping ms-3" style="font-size: 22px;"></i>
+                                    <i class="fa-solid fa-basket-shopping ms-3" style="font-size: 22px;"></i><sup class="basketCount">0</sup>
                                 </a>
                             </div>
                         </div>
@@ -147,6 +156,33 @@
         </div>
     </section>
 
+
+    <div class="container">
+        <div class="row" style="min-height: 700px;">
+            <div class="emptyPage" style="margin-top: 125px;">
+                <img src="./img/Screenshot 2023-03-30 133640.png" alt="" style="width: 250px; margin-left: 40%;">
+                <h1 class="text-center">Your basket is empty</h1>
+                <p class="text-center mt-5"><a href="home.html">Return to shop</a></p>
+            </div>
+            <table class="table mt-5 d-none">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center">Image</th>
+                        <th scope="col" class="text-center">Name</th>
+                        <th scope="col" class="text-center">Price</th>
+                        <th scope="col" class="text-center">Quantity</th>
+                        <th scope="col" class="text-center">Settings</th>
+                    </tr>
+                </thead>
+                <tbody>
+            
+                </tbody>
+            </table>
+            <div class="div">
+                <h5 id="totalPrice" class="text-center"></h5>
+            </div>
+        </div>
+    </div>
 
 
 

@@ -107,7 +107,7 @@
                             <div class="basket ms-3">
                                 <a href="basket.html" style="color: black;">
                                     <span id="total-price">0.00$</span>
-                                    <i class="fa-solid fa-basket-shopping ms-3" style="font-size: 22px;"></i>
+                                    <i class="fa-solid fa-basket-shopping ms-3" style="font-size: 22px;"></i><sup class="basketCount">0</sup>
                                 </a>
                             </div>
                         </div>
@@ -300,15 +300,15 @@
                         <h4 class="entry-title">Deals of the <strong>week!</strong></h4>
                         <div class="deals-counter">
                             <div class="countdown d-flex">
-                                <div class="count-item days">39</div><span>:</span>
-                                <div class="count-item hours">13</div><span>:</span>
-                                <div class="count-item minutes">04</div><span>:</span>
-                                <div class="count-item second">12</div>
+                                <div class="count-item days"></div><span>:</span>
+                                <div class="count-item hours"></div><span>:</span>
+                                <div class="count-item minutes"></div><span>:</span>
+                                <div class="count-item second"></div>
                             </div>
-                            <div class="deals-counter-text">Remains until the end of the offer</div>
+                            <div class="deals-counter-text" style="font-size: 12px; margin-top: 10px; color: #c2c2d3;">Remains until the end of the offer</div>
                         </div>
                         <div class="img-container">
-                            <div class="deal-discount">19%</div>
+                            <div class="deal-discount text-light fs-4 fw-bold">19%</div>
                             <a href="https://klbtheme.com/bacola/product/chobani-complete-vanilla-greek-yogurt/">
                                 <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-50.jpg"
                                     alt="">
@@ -316,24 +316,24 @@
                         </div>
                         <div class="product-describtion">
                             <div class="price">
-                                <del aria-hidden="true">$5.49</span></del><span>$4.49</span>
+                                <del aria-hidden="true" style="color: #c2c2d3; font-family: 'Dosis' sans-serif; font-size: 20px;">$5.49</span></del>
+                                <span style="color: red; font-family: 'Dosis' sans-serif; font-size: 24px; margin-left: 5px; font-weight: 600;">$4.49</span>
                             </div>
                             <div class="desc">
-                                <a href="https://klbtheme.com/bacola/product/chobani-complete-vanilla-greek-yogurt/">Chobani
+                                <a href="https://klbtheme.com/bacola/product/chobani-complete-vanilla-greek-yogurt/" style="font-family: 'Inter' sans-serif; color: black; font-size: 20px;">Chobani
                                     Complete Vanilla Greek Yogurt</a>
                             </div>
-                            <div class="product-meta">
-                                <div class="product-unit"> 1 kg</div>
-                                <div class="product-available in-stock">In Stock</div>
+                            <div class="product-meta d-flex mt-2">
+                                <div class="product-unit" style="font-size: 12px; color: #c2c2d3;"> 1 kg</div>
+                                <div class="product-available in-stock fw-bold" style="color: #00b853; font-size: 11px; margin-left: 10px;">IN STOCK</div>
                             </div>
                             <div class="product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span
-                                        style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span>
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                   <img src="./img/stars.png" alt="" style="width: 66px;">
                                 </div>
-                                <div class="count-rating">1 <span class="rating-text">Ratings</span></div>
                             </div>
-                            <div class="product-pcs">Available : <span>34</span></div>
-                            <div class="product-progress"><span class="progress" style="width: 87%;"></span></div>
+                            <div class="product-pcs mt-5 mb-2" style="margin-left: 72%;">Available : <span>34</span></div>
+                            <div class="product-progress" style="width: 100%; background-color: #e3e4e6; border-radius: 10px;"><span class="progress"></span></div>
                         </div>
                     </div>
                     <div class="right-product-cards product-cards">
@@ -348,7 +348,7 @@
                                 <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span style="width:80%">1</span></div></div>
                                 <div class="price"><del>$9.35</del> <span>$7.25</span></div>
                             </div>
-                            <button class="w-100">Add to cart</button>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
                         </div>
                         <div class="product-card">
                             <div class="img-part">
@@ -442,8 +442,9 @@
         </div>
     </section>
 </body>
-<script src="./owl/owl.carousel.min.js"></script>
+<!-- <script src="./owl/owl.carousel.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/script.js"></script>
 
 </html>
