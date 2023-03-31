@@ -287,10 +287,66 @@ img{
     background: linear-gradient(90deg,#d51243 0%,#ff6048 50%,#ffcd00 100%);
 }
 
+.brasur{
+    background-repeat: no-repeat;
+    height: 251.5px;
+    width: 570px;
+    border: 0;
+    border-radius: 10px;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#saveExtra .head a{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+    padding: 20px 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products .product{
+    width: 235px;
+    border: 1px solid #e3e4e6;
+}
+
+
+#bottom-pictures .brasur{
+    background-repeat: no-repeat;
+    height: 218.5px;
+    width: 370px;
+    border: 0;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+#bottom-pictures .b2{
+    background-position: inherit !important;;
+}
+.brasur-text{
+    width: fit-content;
+}
 
 
 

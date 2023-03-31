@@ -66,7 +66,6 @@ if (localStorage.getItem('basket') != null) {
                 calcBasketCount();
                 removeBasket();
                 
-                
             }
             
         })
@@ -132,10 +131,11 @@ function increaseProduct(product){
 function removeBasket(){
     if (localStorage.getItem('basket') != null) {
         let arr = JSON.parse(localStorage.getItem('basket'));
+        console.log(arr.length);
         if (arr.length == 0) {
             localStorage.removeItem('basket');
             EmptyBasket("-1");
-          }
+        }
       }
 }
 function EmptyBasket(number){

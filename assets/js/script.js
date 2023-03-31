@@ -4,7 +4,6 @@ let basketCount = document.querySelector('.basketCount');
 addBaskets.forEach(addBasket => {  
     
     addBasket.addEventListener('click', function(event){
-        console.log("111234546454");
         event.preventDefault();
         let id = addBasket.parentNode.parentNode.getAttribute("data-id");
         let img = addBasket.parentNode.parentNode.firstElementChild.firstElementChild.getAttribute('src');
