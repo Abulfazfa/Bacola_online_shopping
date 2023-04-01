@@ -4,19 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
     <style>
         .card{
-            background-color: lightgrey;
+            background-color: #f3f3f2;
             padding: 30px 20px;
+            border: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        .card h5{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .card p{
+            font-size: 13px;           
+        }
+        input{
+            border: 0;
+            background-color: #f3f4f7;
+            width: 100%;
+            padding: 10px 0;
+        }
+        label{
+            font-size: 13px;
+            margin: 20px 0 5px;
+            font-family: 'Inter', sans-serif;
+        }
+        .contact-header{
+            font-family: 'Inter', sans-serif;
+            padding: 0 0 50px;
+            border-bottom: 1px solid #e3e4e6;
+        }
+        .contact-header h2{
+            font-size: 40px;
+        }
+        .contact-header p{
+            font-size: 14px;
+            text-align-last: center;
         }
     </style>
-    <div class="container">
+        <section id="header">
+            <div class="blue-area" style="background-color: #233a95;">
+                <p class="text-center text-light">Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight
+                    delay</p>
+            </div>
+            <div class="head-top-menu" style="border-bottom: 1px solid #e3e4e6">
+                <div class="container">
+                    <div class="row" style="height:fit-content ;" id="top-header-menu">
+                        <div class="col-md-4">
+                            <div class="left-side">
+                                <ul id="top-left-menu">
+                                    <li class="top-left-menu-item"><a href="https://klbtheme.com/bacola/about-us/">About
+                                            Us</a></li>
+                                    <li class="top-left-menu-item"><a href="https://klbtheme.com/bacola/my-account/">My
+                                            account</a></li>
+                                    <li class="top-left-menu-item"><a
+                                            href="https://klbtheme.com/bacola/wishlist/">Wishlist</a></li>
+                                    <li class="top-left-menu-item"><a
+                                            href="https://klbtheme.com/bacola/order-tracking/">Order Tracking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="right-side d-flex justify-content-between ms-5">
+                                <div class="secure">
+                                    <i class="klbth-icon-secure"></i>
+                                    <span>100% Secure delivery without contacting the courier</span>
+                                </div>
+                                <div class="help">
+                                    <span>Need help? Call Us:</span>
+                                    <a href="tel:0020500"><strong style="color: #2bbef9">+ 0020 500</strong></a>
+                                </div>
+                                <div class="lang">
+                                    <ul class="s_lang">
+                                        <li class="me-3">
+                                            <a href="">English</a>
+                                            <!-- <option value="" selected>English</option>
+                                            <option value="">Spanish</option>
+                                            <option value="">German</option> -->
+    
+                                        </li>
+                                        <li>
+                                            <a href="">USD</a>
+                                            <!-- <option value="" selected>USD</option>
+                                            <option value="">INR</option>
+                                            <option value="">GBP</option> -->
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="header-search mt-4">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <div class="site-brand">
+                                <a href="#" title="Bacola – Grocery Market and Food Theme">
+                                    <img class="desktop-logo hide-mobile"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/bacola-logo.png"
+                                        alt="Bacola – Grocery Market and Food Theme">
+                                    <span class="brand-description">Online Grocery Shopping Center</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 d-flex">
+                            <div class="search-part d-flex">
+                                <div class="location d-flex ms-4">
+                                    <div class="left-part">
+                                        <span class="location-description d-block">Your Location</span>
+                                        <span class="current-location">Select a Location</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="search-input">
+                                    <input type="text" placeholder="Search for products...">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="basket-profile d-flex align-items-center">
+                                <div class="profile-circle p-2" style="border: 1px solid #e3e4e6; border-radius: 50%;">
+                                    <i class="fa-solid fa-user" style="font-size: 22px;"></i>
+                                </div>
+                                <div class="basket ms-3">
+                                    <a href="basket.html" style="color: black;">
+                                        <span id="total-price">0.00$</span>
+                                        <i class="fa-solid fa-basket-shopping ms-3" style="font-size: 22px;"></i><sup class="basketCount">0</sup>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar_part">
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="col-md-4 p-0 pt-4">
+                            <div class="all-category">
+                                <a href="#" class="ms-2">
+                                    <i class="fa-solid fa-bars text-light"></i>
+                                    <span class="text text-light me-3 ms-2">ALL CATEGORIES</span>
+                                    <i class="fa-solid fa-chevron-down text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-8 p-0 pt-4" style="display: flex; align-items: center;">
+                            <ul class="w-100 d-flex justify-content-between nav-ul">
+                                <li><a href=""><span class="me-3">HOME</span><i class="fa-solid fa-chevron-down"></i></a>
+                                </li>
+                                <li><a href=""><span class="me-3">SHOP</span><i class="fa-solid fa-chevron-down"></i></a>
+                                </li>
+                                <li><a href=""><span>MEATS & SEAFOOD</span></a></li>
+                                <li><a href=""><span>BAKERY</span></a></li>
+                                <li><a href=""><span>BEVERAGES</span></a></li>
+                                <li><a href=""><span>BLOG</span></a></li>
+                                <li><a href="form.html"><span>CONTACT</span></a></li>
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <div class="container mt-5 mb-5">
         <div class="row">
+            <h1 class="text-center" style="font-family: 'Inter', sans-serif;">Get In Touch</h1>
+            <p class="text-center mb-5" style="font-family: 'Inter', sans-serif; font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat unde quam dolor culpa veritatis inventore, aut commodi eum veniam vel.</p>
             <div class="col-md-4">
                 <div class="card">
                     <h5 class="text-center">102 Street 2714 Donovan</h5>
@@ -38,5 +209,72 @@
     
         </div>
     </div>
+    <div class="container mb-5" style="padding: 90px 240px;">
+        <div class="contact-header mb-3">
+            <h2 class="text-center">Send Us</h2>
+            <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat unde quam dolor culpa veritatis inventore, aut commodi eum veniam vel.</p>
+        </div>
+        <div class="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="name" class="w-100">Your name *</label>
+                    <input type="text">
+                </div>
+                <div class="col-md-6">
+                    <label for="name" class="w-100">Your email *</label>
+                    <input type="text">
+                </div>
+                <div class="col-md-12">
+                    <label for="name" class="w-100">Subject *</label>
+                    <input type="text">
+                </div>
+                <div class="col-md-12">
+                    <label for="name" class="w-100">Your message</label>
+                    <input type="text" style="height: 120px;">
+                </div>
+                <div class="col-md-12">
+                   <button class="btn text-light mt-4" style="background-color: #233a95; padding: 10px 25px;" >Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="footer-subscribe" style="background-color: #233a95; padding-top: 70px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="subscribe-context" style="width: 470px; position: relative;">
+                        <p class="text-light fs-6 mb-2">$20 discount for your first order</p>
+                        <h3 class="text-light">Join our newsletter and get...</h3>
+                        <p style="color: #e4e5ee;" class="mb-4 mt-3">Join our email subscription now to get updates on
+                            promotions and coupons.</p>
+                        <div class="subscribe-input">
+                            <form action="">
+                                <input type="email" placeholder="Your email address" id="sbscrb-input">
+                                <input type="submit" value="Subscribe" id="sbscrb-btn">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="img">
+                        <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/coupon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer-text">
+        <div class="advantages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><span>Everyday fresh products</span></div>
+                    <div class="col-md-3"><span>Free delivery for order over $70</span></div>
+                    <div class="col-md-3"><span>Daily Mega Discounts</span></div>
+                    <div class="col-md-3"><span>Best price on the market</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
