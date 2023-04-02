@@ -72,8 +72,27 @@ $(document).ready(function(){
  
   
 });
-
-
+////hover////////
+let homeHover = document.getElementById("homeHover"); 
+let shopHover = document.getElementById("shopHover");
+let sub_menu_top = document.querySelector(".sub-menu-top");
+let sub_menu_home = document.querySelector(".sub-menu-home");
+shopHover.addEventListener("mouseover", function(e) {
+  console.log(sub_menu_top);
+  sub_menu_top.classList.add("visibility");
+})
+shopHover.addEventListener("mouseleave", function(e) {
+  console.log(sub_menu_top);
+  sub_menu_top.classList.remove("visibility");
+})
+homeHover.addEventListener("mouseover", function(e) {
+  console.log(sub_menu_home);
+  sub_menu_home.classList.add("visibility");
+})
+homeHover.addEventListener("mouseleave", function(e) {
+  console.log(sub_menu_home);
+  sub_menu_home.classList.remove("visibility");
+})
 
 
 

@@ -96,8 +96,9 @@ img{
 }
 
 
-
-
+.sub-menu-top{
+    visibility: visible;
+}
 
 .nav-ul li a{
     color: #3e445a;
@@ -105,6 +106,60 @@ img{
     font-size: 15px;
 }
 
+.nav-ul .sub-menu-home{
+    background-color: white;
+    padding: 20px 25px;
+    width: 190px;
+    position: absolute;
+    z-index: 2;
+    top: 90px;
+    visibility: hidden;
+}
+.nav-ul .sub-menu-home li{
+    margin-top: 10px;
+}
+.hhover:hover{
+    background-color: #a5e1f9;
+    padding: 3px 10px;
+    border-radius: 50%;
+}
+.shover:hover{
+    background-color: #a5e1f9;
+    padding: 3px 10px;
+    border-radius: 50%;
+}
+.nav-ul .sub-menu li a:hover{
+    color: #2bbef9;
+}
+.sub-menu-top{
+    width: 98.9vw;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 5;
+    padding: 20px 270px 20px 164px;
+    visibility: hidden;
+}
+.visibility{
+    visibility: visible !important;
+}
+.sub-menu-top .sub-menu{
+    display: block;
+}
+.sub-menu-top .dropdown .text-head{
+    color: #233a95;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.sub-menu span{
+    color: #71778e;
+    margin: 5px 0;
+    font-weight: 400;
+}
+.sub-menu-top span:hover{
+    color: #2bbef9;
+}
 
 .location{
     border: 1px solid lightgray;
@@ -406,7 +461,6 @@ img{
 }
 
 .brasur .discount-text{
-    color: #FF6048;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
@@ -494,6 +548,14 @@ img{
 #bottom-pictures .b2{
     background-position: inherit !important;;
 }
+#bottom-pictures .entry-text{
+    color: #9b9bb4;
+}
+#bottom-pictures button{
+    background-color: #9b9bb4;
+    color: white;
+    font-weight: 600;
+}
 .brasur-text{
     width: fit-content;
 }
@@ -502,23 +564,35 @@ img{
     color: grey;
     margin: 5px 0;
     display: inline-block;
+    font-size: 14px;
 }
 #bottom-pictures .brasur-text .entry-title a{
     font-size: 20px;
     color: black;
     display: inline-block;
     line-height: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 #bottom-pictures .brasur-text .entry-published a{
+    font-size: 14px;
     color: gray;
     display: inline-block;
+    font-family: 'Inter', sans-serif;
 }
 #bottom-pictures .brasur-text .entry-comments a, .entry-author a{
     color: black;
     display: inline-block;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    margin: 0 7px;
+    
 }
 .meta-separator{
-color: grey;
+    color: grey;
+    font-style: italic;
+    font-family: 'Dosis', sans-serif;
+
 }
 
 
@@ -614,20 +688,3 @@ color: grey;
     font-size: 12px;
     margin-right: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
