@@ -1,36 +1,43 @@
 ///////////basket////////////////
 let addBaskets = document.querySelectorAll('.btn-add-to-cart');
 let basketCount = document.querySelector('.basketCount');
+let top_total_price = document.querySelector('.top-total-price');
+let total = 0;
 addBaskets.forEach(addBasket => {  
     
-    addBasket.addEventListener('click', function(event){
-        event.preventDefault();
-        let id = addBasket.parentNode.parentNode.getAttribute("data-id");
-        let img = addBasket.parentNode.parentNode.firstElementChild.firstElementChild.getAttribute('src');
-        let name = addBasket.parentNode.parentNode.firstElementChild.nextElementSibling.firstElementChild.innerText;
-        let price = addBasket.previousElementSibling.firstElementChild.innerText;
-        if(localStorage.getItem('basket') == null){
-           localStorage.setItem('basket',JSON.stringify([]));
-        }
-        let arr = JSON.parse(localStorage.getItem('basket'));
-        let existProduct = arr.find(p => p.id == id);
-        if(existProduct == undefined){
-            arr.push({
-                id: id,
-                imgUrl: img,
-                name: name,
-                price: price,
-                count: 1
-            });
-        }
-        else{
-            existProduct.count++;
-        }
-        
-        localStorage.setItem('basket',JSON.stringify(arr));
-        calcBasketCount();
-    })
+  addBasket.addEventListener('click', function (event) {
+    event.preventDefault();
+    let id = addBasket.parentNode.parentNode.getAttribute("data-id");
+    let img = addBasket.parentNode.firstElementChild.firstElementChild.getAttribute('src');
+    let price = addBasket.parentNode.firstElementChild.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling.innerText;
+    let name = addBasket.previousElementSibling.firstElementChild.innerText;
+    if (localStorage.getItem('basket') == null) {
+      localStorage.setItem('basket', JSON.stringify([]));
+    }
+    let arr = JSON.parse(localStorage.getItem('basket'));
+    let existProduct = arr.find(p => p.id == id);
+    if (existProduct == undefined) {
+      arr.push({
+        id: id,
+        imgUrl: img,
+        name: name,
+        price: price,
+        count: 1
+      });
+    }
+    else {
+      existProduct.count++;
+    }
+    localStorage.setItem('basket', JSON.stringify(arr));
+    calcBasketCount();
+    ShowTotalPrice();
+    
+    
+  })
 })
+
+
+
 
 ///////////counter////////////
 $(document).ready(function(){
@@ -108,9 +115,24 @@ homeHover.addEventListener("mouseleave", function(e) {
 
 
 calcBasketCount();
+ShowTotalPrice();
+function ShowTotalPrice(){
+  if (localStorage.getItem('basket') != null) {
+    let arr = JSON.parse(localStorage.getItem('basket'));
+    arr.forEach(product => {
+      let productPrice = product.price.slice(1,-1);
+      let totalPrice = (product.count * productPrice);
+      top_total_price.innerHTML = `$${round(totalPrice, 2)}`;
+    })
+  }
+}
 function calcBasketCount() {
     if (localStorage.getItem('basket') != null) {
         let arr = JSON.parse(localStorage.getItem('basket'));
         basketCount.innerText = arr.length;
     }
+}
+function round(value, precision) {
+  var multiplier = Math.pow(10, precision || 0);
+  return Math.round(value * multiplier) / multiplier;
 }

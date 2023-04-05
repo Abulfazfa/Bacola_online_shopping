@@ -71,6 +71,10 @@ img{
     width: 102%;
 
 }
+.header-search .basket #total-price{
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+}
 .all-category{
     background-color:#2bbef9;
     padding: 12px 10px;

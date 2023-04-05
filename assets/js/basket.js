@@ -1,8 +1,8 @@
 let table = document.querySelector('.table');
 let emtyMessage = document.querySelector('.emptyPage');
 let totalPriceArea = document.getElementById('totalPrice');
+let top_total_price = document.querySelector('.top-total-price');
 let total = 0;
-
 
 
 if (localStorage.getItem('basket') != null) {
@@ -12,7 +12,7 @@ if (localStorage.getItem('basket') != null) {
         //#region a
         let tr = document.createElement("tr");
         let tdImg = document.createElement('td');
-        tdImg.innerHTML = `<img src="${product.imgUrl}" alt="" width="150" height="150">`
+        tdImg.innerHTML = `<img src="${product.imgUrl}" alt="" width="150" height="150" width="150" style = "width: auto">`
         let tdName = document.createElement('td');
         tdName.innerHTML = `${product.name}`
         let tdPrice = document.createElement('td');
@@ -21,7 +21,7 @@ if (localStorage.getItem('basket') != null) {
         tdCount.innerHTML = `<i class="fa-solid fa-square-minus"></i> <span>${product.count}</span> <i class="fa-solid fa-square-plus"></i>`
         let tdRemove = document.createElement('td');
         tdRemove.innerHTML = `<i class="fa-solid fa-trash"></i>`
-        let productPrice = product.price.slice(0,-4);
+        let productPrice = product.price.slice(1,-1);
         let totalPrice = `Total Price: $${total += (product.count * productPrice)}`;
         tr.append(tdImg,tdName,tdPrice,tdCount,tdRemove);
         table.lastElementChild.appendChild(tr);
@@ -30,7 +30,7 @@ if (localStorage.getItem('basket') != null) {
         let trash = tr.lastElementChild;
         trash.classList.add("text-danger");
         tr.classList.add("text-center");
-
+        top_total_price.innerHTML = `$${round(total, 2)}`;
         trash.lastElementChild.addEventListener("click", function (e) {
             const i = arr.indexOf(product);
             if (i > -1) {
@@ -40,6 +40,7 @@ if (localStorage.getItem('basket') != null) {
             table.lastElementChild.removeChild(tr);
             totalPrice = `Total Price: $${total = total - (product.count * productPrice)}`;
             totalPriceArea.innerHTML = totalPrice;
+            top_total_price.innerHTML = `${round(total, 2)}`;
             localStorage.setItem('basket',JSON.stringify(arr));
             calcBasketCount();
             removeBasket();
@@ -60,6 +61,13 @@ if (localStorage.getItem('basket') != null) {
             total -= Number(productPrice)
             totalPrice = `Total Price: $${round(total, 2)}`;
             totalPriceArea.innerHTML = totalPrice;
+            top_total_price.innerHTML = `$${round(total, 2)}`;
+            if (`$${round(total, 2)}` != "$0") {
+                top_total_price.innerHTML = `$${round(total, 2)}`;
+            }
+            else{
+                top_total_price.innerHTML = `$0.00`;
+            }
             if (product.count == 0) {
                 table.lastElementChild.removeChild(tr);
                 removeProduct(product);
@@ -76,6 +84,7 @@ if (localStorage.getItem('basket') != null) {
             total += Number(productPrice)
             totalPrice = `Total Price: $${round(total, 2)}`;
             totalPriceArea.innerHTML = totalPrice;
+            top_total_price.innerHTML = `$${round(total, 2)}`;
             
         })
 
@@ -84,10 +93,11 @@ if (localStorage.getItem('basket') != null) {
 calcBasketCount();
 
 function calcBasketCount() {
-    if (localStorage.getItem('basket') != null) {
-        let arr = JSON.parse(localStorage.getItem('basket'));
-        basketCount.innerText = arr.length;
-    }
+    // if (localStorage.getItem('basket') != null) {
+    //     let arr = JSON.parse(localStorage.getItem('basket'));
+    //     console.log(arr);
+    //     basketCount.innerText = arr.length;
+    // }
 }
 
 
@@ -102,6 +112,7 @@ function removeProduct(product){
         }
         console.log(arr);
         localStorage.setItem('basket',JSON.stringify(arr));
+        location.reload();
         
     }
 }
@@ -114,6 +125,7 @@ function decraseProduct(product){
         clickcedProduct.count--;     
         console.log(arr);
         localStorage.setItem('basket',JSON.stringify(arr));
+        location.reload();
     }
 }
 
@@ -136,7 +148,8 @@ function removeBasket(){
             localStorage.removeItem('basket');
             EmptyBasket("-1");
         }
-      }
+        location.reload();
+    }
 }
 function EmptyBasket(number){
     if(number == 1){
