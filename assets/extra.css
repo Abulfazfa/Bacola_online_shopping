@@ -1,0 +1,14 @@
+/*       SHOP PAGE       */
+ul {
+  display: block;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  margin: 10px 0;
+}
+ul li label {
+  margin-left: 10px;
+}/*# sourceMappingURL=extra.css.map */

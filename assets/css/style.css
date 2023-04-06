@@ -692,3 +692,10 @@ img{
     font-size: 12px;
     margin-right: 15px;
 }
+
+
+/*        SHOP PAGE       */
+.widget-body ul li{
+    display: flex;
+    align-items: center;
+}
