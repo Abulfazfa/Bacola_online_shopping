@@ -2,6 +2,7 @@ let table = document.querySelector('.table');
 let emtyMessage = document.querySelector('.emptyPage');
 let totalPriceArea = document.getElementById('totalPrice');
 let top_total_price = document.querySelector('.top-total-price');
+let basketCount = document.querySelector('.basketCount');
 let total = 0;
 
 
@@ -93,11 +94,11 @@ if (localStorage.getItem('basket') != null) {
 calcBasketCount();
 
 function calcBasketCount() {
-    // if (localStorage.getItem('basket') != null) {
-    //     let arr = JSON.parse(localStorage.getItem('basket'));
-    //     console.log(arr);
-    //     basketCount.innerText = arr.length;
-    // }
+    if (localStorage.getItem('basket') != null) {
+        let arr = JSON.parse(localStorage.getItem('basket'));
+        console.log(arr);
+        basketCount.innerText = arr.length;
+    }
 }
 
 

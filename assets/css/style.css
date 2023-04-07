@@ -103,12 +103,35 @@ img{
 .sub-menu-top{
     visibility: visible;
 }
-
+.nav-ul{
+    padding-right: 15px;
+}
 .nav-ul li a{
     color: #3e445a;
     font-family: 'Dosis', sans-serif;
     font-size: 15px;
 }
+.all-category .sub-menu-all{
+    background-color: white;
+    padding-top: 20px;
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    top: 65px;
+    left: -10px;
+    visibility: hidden;
+}
+.sub-menu-all li{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.sub-menu-all li span{
+    color: black;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+}
+
 
 .nav-ul .sub-menu-home{
     background-color: white;
@@ -122,17 +145,12 @@ img{
 .nav-ul .sub-menu-home li{
     margin-top: 10px;
 }
-.hhover:hover{
+.nav-ul li:hover{
     background-color: #a5e1f9;
     padding: 3px 10px;
     border-radius: 50%;
 }
-.shover:hover{
-    background-color: #a5e1f9;
-    padding: 3px 10px;
-    border-radius: 50%;
-}
-.nav-ul .sub-menu li a:hover{
+.sub-menu-all li span:hover, .nav-ul li a:hover{
     color: #2bbef9;
 }
 .sub-menu-top{
@@ -141,7 +159,7 @@ img{
     position: absolute;
     top: 90px;
     left: 0;
-    z-index: 5;
+    z-index: 20;
     padding: 20px 270px 20px 164px;
     visibility: hidden;
 }
@@ -238,6 +256,13 @@ img{
     font-size: 12px;
     font-family: 'Inter', sans-serif;
     margin-bottom: 10px;
+}
+.slider-text .buttonOfslider{
+    padding: 7px 23px;
+    background-color: #2bbef9;
+    color: white;
+    border: 0;
+    border-radius: 20px;
 }
 
 
@@ -441,14 +466,15 @@ img{
     padding: 5px;
 }
 .hvr-p-card .product-card{
-    position: relative;
+    background-color: white;
     overflow: hidden;
-    height: 370px;
+    transition: 0.3s;
 }
-.hvr-p-card .product-card:hover{
-    overflow: visible;
-    height: 425px;
 
+.hvr-p-card .product-card:hover{
+    height: 430px;
+    border-color: grey;
+    z-index: 999 !important; 
 }
 
 

@@ -1,14 +1,126 @@
 /*       SHOP PAGE       */
-ul {
+#shop_section ul {
   display: block;
 }
-ul li {
+#shop_section ul li {
   display: flex;
   align-items: center;
   font-family: "Inter", sans-serif;
   font-size: 13px;
   margin: 10px 0;
+  position: relative;
 }
-ul li label {
+#shop_section ul li label {
   margin-left: 10px;
+  color: #77718e;
+}
+#shop_section h4 {
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+#shop_section .products .product-card {
+  width: 218px;
+  height: auto;
+  border: 1px solid #e3e4e6;
+}
+#shop_section .widget-body .plus::after {
+  content: "+";
+  position: absolute;
+  right: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 3px;
+  color: rgb(103, 103, 103);
+  cursor: pointer;
+}
+#shop_section .pagination span {
+  margin-right: 10px;
+  padding: 5px 12px;
+  border-radius: 50%;
+  color: black;
+}
+#shop_section .pagination span:hover {
+  background-color: lightgray;
+}
+#shop_section .sellected_page {
+  color: white !important;
+  background-color: #2bbef9 !important;
+}
+
+.range-slider {
+  height: 5px;
+  position: relative;
+  background-color: #e1e9f6;
+  border-radius: 2px;
+}
+
+.range-selected {
+  height: 100%;
+  left: 30%;
+  right: 30%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.range-input {
+  position: relative;
+}
+
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -7px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.range-input input::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: #fff;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+
+.range-input input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: #fff;
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+
+.range-price {
+  margin: 20px 0 30px;
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#priceWord {
+  font-weight: normal;
+  color: gray;
+}
+
+.range-price label {
+  margin-right: 5px;
+}
+
+.range-price input {
+  width: 40px;
+  padding: 5px;
+}
+
+.range-price input:first-of-type {
+  margin-right: 15px;
 }/*# sourceMappingURL=extra.css.map */

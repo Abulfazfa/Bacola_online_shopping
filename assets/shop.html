@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="extra.css">
 </head>
@@ -147,7 +148,7 @@
                                     </ul>
                                 
                             </li>
-                            <li class="shover"><a href="" id="shopHover" class=""><span class="me-3">SHOP</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <li class="shover"><a href="shop.html" id="shopHover" class=""><span class="me-3">SHOP</span><i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="sub-menu-top d-flex justify-content-between">
                                     <li class="dropdown  menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a
                                             href="https://klbtheme.com/bacola/shop/"><span class="text-head">Shop Lists</span></a>
@@ -276,65 +277,314 @@
         </div>
     </section>
     
-
-    <div class="container">
-        <div class="row mt-5 mb-5">
-            <div class="col-3">
-                <div class="widget">
-                    <h4 class="widget-title">PRODUCT CATEGORIES</h4>
-                    <div class="widget-body">
+    <section id="shop_section">
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-3">
+                    <div class="widget">
+                        <h4 class="widget-title">PRODUCT CATEGORIES</h4>
+                        <div class="widget-body">
+                            <ul>
+                                <li class="plus"><input type="checkbox" name="" id=""><label for="">Beverages</label></li>
+                                <li><input type="checkbox" name="" id=""><label for="">Biscuits & Snacks</label></li>
+                                <li class="plus"><input type="checkbox" name="" id=""><label for="">Breads & Bakery</label></li>
+                                <li class="plus"><input type="checkbox" name="" id=""><label for="">Breakfast & Dairy</label></li>
+                                <li><input type="checkbox" name="" id=""><label for="">Frozen Foods</label></li>
+                                <li class="plus"><input type="checkbox" name="" id=""><label for="">Fruits & Vegetables</label></li>
+                                <li><input type="checkbox" name="" id=""><label for=""> Grocery & Staples</label></li>
+                                <li><input type="checkbox" name="" id=""><label for="">Household Needs</label></li>
+                                <li class="plus"><input type="checkbox" name="" id=""><label for="">Meats & Seafood</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter mt-5">
+                        <h4 class="filter-heading">FILTER BY PRICE</h4>
+                        <div class="range">
+                            <div class="range-slider">
+                              <span class="range-selected"></span>
+                            </div>
+                            <div class="range-input">
+                              <input type="range" class="min" min="0" max="1000" value="300" step="100">
+                              <input type="range" class="max" min="0" max="1000" value="700" step="100">
+                            </div>
+                            <div class="range-price">      
+                              <label for="min" id="priceWord"> Price:</label>
+                              <span id="enterMinPrice"></span>
+                              <label for="max"> &nbsp-</label>
+                              <span id="enterMaxPrice"></span>
+                              <input type="number" name="min" value="300" style="font-size: 12px; padding: 0; border: 0; display: none;">      
+                              <input type="number" name="max" value="700" style="font-size: 12px; padding: 0; border: 0; display: none;" >      
+                            </div>
+                          </div> 
+                          
+                    </div>
+                    <div class="product-status mt-5">
+                        <h4>PRODUCT STATUS</h4>
+                       <div class="ul">
                         <ul>
-                            <li><input type="checkbox" name="" id=""><label for="">Beverages</label></li>
-                            <li><input type="checkbox" name="" id=""><label for="">Biscuits & Snacks</label></li>
-                            <li><input type="checkbox" name="" id=""><label for="">Breads & Bakery</label></li>
-                            <li><input type="checkbox" name="" id=""><label for="">Breakfast & Dairy</label></li>
-                            <li><input type="checkbox" name="" id=""><label for="">Frozen Foods</label></li>
-                            <li><input type="checkbox" name="" id=""><label for="">Fruits & Vegetables</label></li>
-                            <li><input type="checkbox" name="" id=""><label for=""> Grocery & Staples</label></li>
-                            <li><input type="checkbox" name="" id=""><label for="">Household Needs</label></li>
-                            <li><input type="checkbox" name="" id=""><label for="">Meats & Seafood</label></li>
+                            <li><input type="checkbox"><label for="">In Stock</label></li>
+                            <li><input type="checkbox"><label for="">On Sale</label></li>
                         </ul>
+                       </div>
+                    </div>
+                    <div class="brands mt-5">
+                        <h4>BRANDS</h4>
+                        <div class="ul">
+                            <ul>
+                                <li><input type="checkbox" name="" id=""><label for="">Frito Lay</label></li>
+                                <li><input type="checkbox" name="" id=""><label for="">Nespresso</label></li>
+                                <li><input type="checkbox"><label for="">Oreo</label></li>
+                                <li><input type="checkbox"><label for="">Quaker</label></li>
+                                <li><input type="checkbox"><label for="">Welch's</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gif w-100 mt-5">
+                        <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/sidebar-banner.gif" class="image wp-image-1184  attachment-full size-full" alt="" decoding="async" loading="lazy" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
-                <div class="filter">
-                    <h4 class="filter-heading">FILTER BY PRICE</h4>
-
-                      
-                </div>
-                <div class="product-status">
-                    <h4>PRODUCT STATUS</h4>
-                   <div class="ul">
-                    <ul>
-                        <li><input type="checkbox"><label for="">In Stock</label></li>
-                        <li><input type="checkbox"><label for="">On Sale</label></li>
-                    </ul>
-                   </div>
-                </div>
-                <div class="brands">
-                    <h4>BRANDS</h4>
-                    <div class="ul">
-                        <ul>
-                            <li><input type="checkbox" name="" id=""><label for="">Frito Lay</label></li>
-                            <li><input type="checkbox" name="" id=""><label for="">Nespresso</label></li>
-                            <li><input type="checkbox"><label for="">Oreo</label></li>
-                            <li><input type="checkbox"><label for="">Quaker</label></li>
-                            <li><input type="checkbox"><label for="">Welch's</label></li>
-                        </ul>
+                <div class="col-9">
+                    <div class="top_picture w-100">
+                        <a href="">
+                            <img src="./img/pcture.png" alt="" style="width: 100%;">
+                        </a>
                     </div>
-                </div>
-                <div class="gif w-100">
-                    <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/sidebar-banner.gif" class="image wp-image-1184  attachment-full size-full" alt="" decoding="async" loading="lazy" style="max-width: 100%; height: auto;">
-                </div>
-            </div>
-            <div class="col-9">
-                <div class="top_picture w-100">
-                    <a href="">
-                        <img src="./img/pcture.png" alt="" style="width: 100%;">
-                    </a>
+                    <div class="products">
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="	https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-60-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-45-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="	https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-60-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-45-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="	https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-60-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="img-part">
+                                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-45-346x310.jpg"
+                                    style="width: 192px;">
+                            </div>
+                            <div class="desc-part" style="width: fit-content;">
+                                <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/" title="All Natural Italian-Style Chicken Meatballs">All Natural Italian-Style Chicken Meatballs</a>
+                                <div class="product-available in-stock">In Stock</div>
+                                <div class="product-rating"><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                    <img src="./img/stars.png" alt="" style="width: 66px;">
+                                </div></div>
+                                <div class="price">
+                                    <del>$9.35</del> 
+                                    <span>$7.25</span>
+                                </div>
+                            </div>
+                            <button class="w-100 btn-add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pagination mt-5 mb-5">
+                        <div style="margin: auto; width: fit-content;">
+                            <a href="">
+                                <span class="sellected_page">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span><img src="./img/axis.png" alt="" style="width: 20px; margin-bottom: 5px;"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
 
 
 
@@ -522,4 +772,5 @@
 
 
 <script src="./js/script.js"></script>
+<script src="./js/shop.js"></script>
 </html>
