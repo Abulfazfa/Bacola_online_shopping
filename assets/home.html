@@ -92,6 +92,58 @@
                                 <div class="left-part">
                                     <span class="location-description d-block">Your Location</span>
                                     <span class="current-location">Select a Location</span>
+                                    
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                            Launch demo modal
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content p-4">
+                                                    <div class="modal-head">
+                                                        <h5 class="fs-5">Choose your Delivery Location</h5>
+                                                        <!-- <span>Enter your address and we will specify the offer for your area.</span> -->
+                                                    </div>
+                                                    <div class="modal-desc">
+                                                        <p>Enter your address and we will specify the offer for your area.</p>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="search-input">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                            <input type="text" placeholder="Search for products...">
+                                                        </div>
+                                                        <ul class="select2-results__options d-block">
+                                                            <li><span>Select a Location</span><span class="min-price">Clear All</span></li>
+                                                            <li><span>Alabama</span><span class="min-price">Min:
+                                                                    $130</span></li>
+                                                            <li><span>Alaska</span><span class="min-price">Min:
+                                                                    $120</span></li>
+                                                            <li><span>Arizona</span><span class="min-price">Min:
+                                                                    $150</span></li>
+                                                            <li><span>California</span><span
+                                                                    class="min-price">Min: $110</span></li>
+                                                            <li><span>Colorado</span><span class="min-price">Min:
+                                                                    $140</span></li>
+                                                            <li><span>Florida</span><span class="min-price">Min:
+                                                                    $160</span></li>
+                                                            <li><span>Georgia</span><span class="min-price">Min:
+                                                                    $120</span></li>
+                                                            <li><span>Kansas</span><span class="min-price">Min:
+                                                                    $170</span></li>
+                                                            <li><span>Minnesota</span><span class="min-price">Min:
+                                                                    $120</span></li>
+                                                            <li><span>New York</span><span class="min-price">Min:
+                                                                    $110</span></li>
+                                                            <li><span>Washington</span><span
+                                                                    class="min-price">Min: $130</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
@@ -1363,10 +1415,11 @@
 <!-- <script src="./owl/owl.carousel.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script>
     const swiper = new Swiper('.swiper', {

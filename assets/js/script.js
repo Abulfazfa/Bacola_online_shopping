@@ -102,6 +102,10 @@ homeHover.addEventListener("mouseleave", function(e) {
   console.log(sub_menu_home);
   sub_menu_home.classList.remove("visibility");
 })
+//////modal///////
+
+
+
 //////click//////
 let all_category = document.getElementById("all-category-btn")
 let sub_menu_all = document.querySelector(".sub-menu-all");

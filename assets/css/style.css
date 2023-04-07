@@ -725,3 +725,26 @@ img{
     display: flex;
     align-items: center;
 }
+/*        MODAL          */
+.modal-desc p{
+    font-size: 14px;
+    color: grey;
+}
+.modal-body{
+    padding: 0;
+}
+.modal-body .search-input input{
+    height: 48px;
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 45px;
+}
+.modal-body .search-input i{
+   font-size: 20px;
+   left: 10px;
+   top: 37%;
+}
+.select2-results__options li{
+    display: flex;
+    justify-content: space-between;
+}
