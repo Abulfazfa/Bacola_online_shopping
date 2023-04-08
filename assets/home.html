@@ -89,61 +89,57 @@
                     <div class="col-md-10 d-flex">
                         <div class="search-part d-flex">
                             <div class="location d-flex ms-4">
-                                <div class="left-part">
-                                    <span class="location-description d-block">Your Location</span>
-                                    <span class="current-location">Select a Location</span>
-                                    
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                                            Launch demo modal
-                                        </button>
-                                        
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                                            aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content p-4">
-                                                    <div class="modal-head">
-                                                        <h5 class="fs-5">Choose your Delivery Location</h5>
-                                                        <!-- <span>Enter your address and we will specify the offer for your area.</span> -->
-                                                    </div>
-                                                    <div class="modal-desc">
-                                                        <p>Enter your address and we will specify the offer for your area.</p>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="search-input">
-                                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                                            <input type="text" placeholder="Search for products...">
-                                                        </div>
-                                                        <ul class="select2-results__options d-block">
-                                                            <li><span>Select a Location</span><span class="min-price">Clear All</span></li>
-                                                            <li><span>Alabama</span><span class="min-price">Min:
-                                                                    $130</span></li>
-                                                            <li><span>Alaska</span><span class="min-price">Min:
-                                                                    $120</span></li>
-                                                            <li><span>Arizona</span><span class="min-price">Min:
-                                                                    $150</span></li>
-                                                            <li><span>California</span><span
-                                                                    class="min-price">Min: $110</span></li>
-                                                            <li><span>Colorado</span><span class="min-price">Min:
-                                                                    $140</span></li>
-                                                            <li><span>Florida</span><span class="min-price">Min:
-                                                                    $160</span></li>
-                                                            <li><span>Georgia</span><span class="min-price">Min:
-                                                                    $120</span></li>
-                                                            <li><span>Kansas</span><span class="min-price">Min:
-                                                                    $170</span></li>
-                                                            <li><span>Minnesota</span><span class="min-price">Min:
-                                                                    $120</span></li>
-                                                            <li><span>New York</span><span class="min-price">Min:
-                                                                    $110</span></li>
-                                                            <li><span>Washington</span><span
-                                                                    class="min-price">Min: $130</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                
+                                <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="background-color: transparent; border: 0;">
+                                    <div class="left-part">
+                                        <span class="location-description d-block">Your Location</span>
+                                        <span class="current-location">Select a Location</span>
+                                    </div>
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content p-4" style="width: 430px; height: 527px;" >
+                                        <div class="modal-head d-flex justify-content-between">
+                                            <h5 class="fs-5" style="width: fit-content;">Choose your Delivery Location</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: 0; background-color: white; height: fit-content;">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
+                                        <div class="modal-desc">
+                                            <p>Enter your address and we will specify the offer for your area.</p>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="search-input mb-4">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                <input type="text" placeholder="Search your area">
+                                            </div>
+                                            <ul class="select2-results__options d-block">
+                                                <li><a href=""><span>Select a Location</span><span class="min-price">Clear All</span></a></li>
+                                                <li><a href=""><span>Albama</span><span class="min-price">Min: $120</span></a></li>
+                                                <li><a href=""><span>Alaska</span><span class="min-price">Min: $110</span></a></li>
+                                                <li><a href=""><span>Arizona</span><span class="min-price">Min: $130</span></a></li>
+                                                <li><a href=""><span>California</span><span
+                                                        class="min-price">Min: $110</span></li>
+                                                <li><span>Colorado</span><span class="min-price">Min:
+                                                        $140</span></a></li>
+                                                <li><a href=""><span>Florida</span><span class="min-price">Min:
+                                                        $160</span></a></li>
+                                                <li><a href=""><span>Georgia</span><span class="min-price">Min:
+                                                        $120</span></a></li>
+                                                <li><a href=""><span>Kansas</span><span class="min-price">Min:
+                                                        $170</span></a></li>
+                                                <li><a href=""><span>Minnesota</span><span class="min-price">Min:
+                                                        $120</span></a></li>
+                                                <li><a href=""><span>New York</span><span class="min-price">Min:
+                                                        $110</span></a></li>
+                                                <li><a href=""><span>Washington</span><span
+                                                        class="min-price">Min: $130</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                                 </div>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>

@@ -733,11 +733,27 @@ img{
 .modal-body{
     padding: 0;
 }
+.modal-body .close span {
+    font-size: 18px;
+    background-color: white;
+    padding-bottom: 7px;
+}
+.modal-body ul{
+    height: 336px;
+    overflow-y: scroll;
+}
+.modal-body ul .min-price{
+    border: 1px solid #e2e2ec;
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 2px 7px;
+}
 .modal-body .search-input input{
     height: 48px;
     width: 100%;
     margin: 10px 0;
     padding-left: 45px;
+    font-weight: 400;
 }
 .modal-body .search-input i{
    font-size: 20px;
@@ -745,6 +761,18 @@ img{
    top: 37%;
 }
 .select2-results__options li{
+    border-bottom: 1px solid #e2e2ec;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.select2-results__options li a{
     display: flex;
     justify-content: space-between;
+    color: grey;
 }
+.select2-results__options li span:first-child{
+    color: #202435;
+}
+
+
