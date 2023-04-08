@@ -140,6 +140,7 @@ img{
     position: absolute;
     z-index: 2;
     top: 90px;
+    left: 35vw;
     visibility: hidden;
 }
 .nav-ul .sub-menu-home li{
@@ -469,14 +470,12 @@ img{
     background-color: white;
     overflow: hidden;
     transition: 0.3s;
+    z-index: 999 !important;
 }
-
 .hvr-p-card .product-card:hover{
     height: 430px;
     border-color: grey;
-    z-index: 999 !important; 
 }
-
 
 .brasur{
     background-repeat: no-repeat;
@@ -540,8 +539,38 @@ img{
     color: grey;
 }
 
+.relativeHeight{
+    height: 784px;
+    position: relative;
+}
+.upperCards{
+    display: flex;
+    flex-direction: row;
+    height: 384px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 16;
+}
+.middleCard{
+    display: flex;
+    flex-direction: row;
+    height: 384px;
+    position: absolute;
+    top: 384px;
+    left: 0;
+    z-index: 15;
+}
+.downCards{
+    display: flex;
+    flex-direction: row;
+    height: 384px;
+    position: absolute;
+    top: 768px;
+    left: 0;
+    z-index: 14;
 
-
+}
 
 #saveExtra .head a{
     color: black;
@@ -774,5 +803,6 @@ img{
 .select2-results__options li span:first-child{
     color: #202435;
 }
-
-
+.select2-results__options li span:first-child:hover{
+    color: #233a95;
+}

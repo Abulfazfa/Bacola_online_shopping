@@ -43,21 +43,22 @@
         color: rgb(103, 103, 103);
         cursor: pointer;
     }
+
     .pagination span{
-        margin-right: 10px;
-        padding: 5px 12px; 
-        border-radius: 50%; 
-        color: black;
+      margin-right: 10px;
+      padding: 5px 12px; 
+      border-radius: 50%; 
+      color: black;
     }
     .pagination span:hover{
-        background-color: lightgray;
+      background-color: lightgray;
     }
     .sellected_page{
-        color: white !important;
-        background-color: #2bbef9 !important;
+      color: white !important;
+      background-color: #2bbef9 !important;
     }
-}
 
+}
 
 
 
@@ -132,3 +133,63 @@
     margin-right: 15px;
   }
   
+
+
+
+
+///// BLOG //////
+#blog_section{
+  font-family: 'Inter', sans-serif;
+  .article{
+    .img img{
+      width: 100%;
+    }
+    .entry-title a{
+      color: black;
+      font-size: 37px;
+      font-weight: 600;
+    }
+    .date a{
+      color: #77718e;
+      font-size: 14px;
+    
+    }
+    .button{
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #233a95;
+      color: white;
+      font-size: 14px;
+    }
+  }
+  .pagination span{
+    margin-right: 5px;
+    padding: 5px 12px; 
+    border-radius: 50%; 
+    color: black;
+  }
+  .pagination span:hover{
+    background-color: lightgray;
+  }
+  .sellected_page{
+    color: white !important;
+    background-color: #2bbef9 !important;
+  }
+  .search-input{
+    input{
+    width: 100% !important;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    }
+    i{
+      font-size: 18px;
+      top: 14px;
+      right: 0;
+    }
+  }
+  
+}

@@ -113,7 +113,6 @@ function removeProduct(product){
         }
         console.log(arr);
         localStorage.setItem('basket',JSON.stringify(arr));
-        location.reload();
         
     }
 }
@@ -126,7 +125,7 @@ function decraseProduct(product){
         clickcedProduct.count--;     
         console.log(arr);
         localStorage.setItem('basket',JSON.stringify(arr));
-        location.reload();
+        
     }
 }
 

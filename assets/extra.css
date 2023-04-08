@@ -123,4 +123,54 @@
 
 .range-price input:first-of-type {
   margin-right: 15px;
+}
+
+#blog_section {
+  font-family: "Inter", sans-serif;
+}
+#blog_section .article .img img {
+  width: 100%;
+}
+#blog_section .article .entry-title a {
+  color: black;
+  font-size: 37px;
+  font-weight: 600;
+}
+#blog_section .article .date a {
+  color: #77718e;
+  font-size: 14px;
+}
+#blog_section .article .button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #233a95;
+  color: white;
+  font-size: 14px;
+}
+#blog_section .pagination span {
+  margin-right: 5px;
+  padding: 5px 12px;
+  border-radius: 50%;
+  color: black;
+}
+#blog_section .pagination span:hover {
+  background-color: lightgray;
+}
+#blog_section .sellected_page {
+  color: white !important;
+  background-color: #2bbef9 !important;
+}
+#blog_section .search-input input {
+  width: 100% !important;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+#blog_section .search-input i {
+  font-size: 18px;
+  top: 14px;
+  right: 0;
 }/*# sourceMappingURL=extra.css.map */

@@ -85,7 +85,6 @@ let shopHover = document.getElementById("shopHover");
 let sub_menu_top = document.querySelector(".sub-menu-top");
 let sub_menu_home = document.querySelector(".sub-menu-home");
 
-
 shopHover.addEventListener("mouseover", function(e) {
   console.log(sub_menu_top);
   sub_menu_top.classList.add("visibility");
