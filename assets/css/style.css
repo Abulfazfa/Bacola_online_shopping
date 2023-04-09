@@ -552,7 +552,7 @@ img{
     left: 0;
     z-index: 16;
 }
-.middleCard{
+.downCards{
     display: flex;
     flex-direction: row;
     height: 384px;
@@ -561,7 +561,7 @@ img{
     left: 0;
     z-index: 15;
 }
-.downCards{
+.DownCards{
     display: flex;
     flex-direction: row;
     height: 384px;
